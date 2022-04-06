@@ -1,0 +1,79 @@
+! add any others from the selections in history_columns.list
+! comment out with exclamation !
+!----------------------------------------------------------------------------------------------
+
+!# general info about the model
+
+      model_number ! counting from the start of the run
+      num_zones ! number of zones in the model
+       star_age ! elapsed simulated time in years since the start of the run
+       log_dt ! log10 time_step in years
+      star_mass ! in Msun units
+!----------------------------------------------------------------------------------------------
+
+   !## mixing regions
+
+      mass_conv_core ! (Msun) mass coord of top of convective core.  0 if core is not convective
+
+!----------------------------------------------------------------------------------------------
+
+!# nuclear reactions
+
+      log_LH ! log10 power_h_burn
+      log_LHe ! log10 power_he_burn
+      log_Lnuc ! log(LH + LHe + LZ)
+
+   !## information about reactions (by category)
+
+      pp
+      cno
+      tri_alfa
+
+!----------------------------------------------------------------------------------------------
+
+!# information about core and envelope
+
+      he_core_mass
+      ! c_core_mass
+      ! o_core_mass
+      !si_core_mass
+      !fe_core_mass
+      !neutron_rich_core_mass
+!----------------------------------------------------------------------------------------------
+
+!# conditions at or near the surface of the model
+
+      log_Teff ! log10 effective temperature
+      log_L ! log10 luminosity in Lsun units
+      log_R ! log10 radius in Rsun units
+      log_g ! log10 gravity
+!----------------------------------------------------------------------------------------------
+
+!# conditions near center
+
+      log_cntr_P
+      log_cntr_Rho
+      log_cntr_T
+      center_mu
+!----------------------------------------------------------------------------------------------
+
+!# abundances
+
+      ! individual central mass fractions (as many as desired)
+      center h1
+      center he4
+      center c12
+      center o16
+      center n14 
+
+   !## mass fractions near surface
+
+      surface h1
+      surface he4
+      surface c12
+      surface o16
+      surface n14
+
+      total_mass h1
+      total_mass he4
+      
