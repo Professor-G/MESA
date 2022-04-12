@@ -7,7 +7,7 @@ here = Path(__file__).parent
 dft_inlist_project = here / "inlist_project_unfilled"
 dft_inlist = here / "inlist"
 
-masses = np.geomspace(0.3, 20, 16)
+masses = np.geomspace(0.3, 20, 20)
 masses = np.append(masses, 1.0)
 print(masses)
 
