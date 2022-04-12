@@ -15,6 +15,8 @@
    z_mass_fraction_metals
    gradT
    grada
+   gradr
+   gradL
    luminosity
 
    mu ! mean molecular weight per gas particle (ions + free electrons)

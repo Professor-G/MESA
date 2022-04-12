@@ -1,2 +1,6 @@
+rm final_model*.mod
+rm inlist_*.*
+rm profile_final*.data
+
 cd make
 make clean

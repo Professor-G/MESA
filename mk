@@ -1,5 +1,7 @@
 #!/bin/bash
 
+python build_inlists.py
+
 function check_okay {
 	if [ $? -ne 0 ]
 	then
