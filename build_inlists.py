@@ -20,6 +20,8 @@ with dft_inlist.open('r') as dft:
 names = here / "mass_list.txt"
 if names.exists():
     names.unlink()
+with names.open('a') as fil:
+    fil.write(f"{len(masses):.0f}\n")
     
 for mass in masses:
     proj_txt = dft_proj_txt.replace("FILL_HERE",

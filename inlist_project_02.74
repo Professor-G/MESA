@@ -41,6 +41,7 @@
   ! starting specifications
     initial_mass = 02.74 ! in Msun units
     initial_z = 0.02
+    initial_y = 0.28
     max_age = 1d10
     ! eps_nuc_factor = 0
     ! dxdt_nuc_factor = 0
@@ -54,6 +55,7 @@
     ! profile_model = 1
     ! terminal_interval = 10000
 
+    star_history_name = 'hiostory_02.74.data'
 / ! end of controls namelist
 
 

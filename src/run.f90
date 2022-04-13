@@ -4,7 +4,7 @@ use run_star, only: do_run_star
 
 implicit none
 
-integer :: ierr
+integer :: ierr, n_mods
 character (len=32) :: inlist_fname, mass_formatted, mass_list
 logical :: test_log
 real :: mass
@@ -13,7 +13,8 @@ integer :: i
 ierr = 0
 
 open(2, file="mass_list.txt", status = "old")
-do i=1,17
+read(2, *) n_mods
+do i=1, n_mods
     read(2, *)  mass_formatted
     ! mass = 0.3 + 1.313333 * (i - 1)
     ! mass_formatted = "brew install gfortran"

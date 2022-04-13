@@ -18,5 +18,7 @@
    gradr
    gradL
    luminosity
+   pp
+   cno
 
    mu ! mean molecular weight per gas particle (ions + free electrons)
