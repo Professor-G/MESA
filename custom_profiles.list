@@ -20,5 +20,7 @@
    luminosity
    pp
    cno
+   grav
+   brunt_N2
 
    mu ! mean molecular weight per gas particle (ions + free electrons)
